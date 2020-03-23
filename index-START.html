@@ -32,14 +32,8 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
 
-    const fifteen = inventors.filter(inventor => {
-      if (inventor.year >= 1500 && inventor.year <= 1599){
-        return true; //keep
-      } else {
-        return false; //discard.  False return is not needed.
-      }
-    })//end function
-    console.log(fifteen); //normal logging
+    const fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year <= 1599)//end function
+    // console.log(fifteen); //normal logging
     console.table(fifteen); //displays as table
     
 
